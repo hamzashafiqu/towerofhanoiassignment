@@ -70,3 +70,7 @@ li $v0,  4
 la $a0,  part3
 syscall
 li $v0,  11
+add $a0, $s2, $zero
+syscall
+beq $s0, $t1, exithanoi
+j recur2
